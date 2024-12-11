@@ -1,0 +1,38 @@
+Program:
+    'begin'
+        commands*=Command
+    'end'
+;
+
+Command:
+    CarDefinition | MoveCommand | AccelerateCommand | CheckStatusCommand | StopCommand | BrakeCommand |EngineCommand
+;
+
+CarDefinition:
+    'car' name=ID 'model' model=ID 'color' color=ID 'max_speed' max_speed=INT 'fuel' fuel=INT 'engine_status' engine_status=ID
+;
+
+MoveCommand:
+    'drive' car=ID direction=ID 'for' distance=INT 'km'
+;
+
+AccelerateCommand:
+    'accelerate' car=ID 'by' amount=INT
+;
+
+CheckStatusCommand:
+    'check_status' car=ID status_type=ID
+;
+
+StopCommand:
+    'stop' car=ID
+;
+BrakeCommand:
+    'slow' car=ID 'by' amount=INT
+;
+EngineCommand:
+    'turn' car=ID 'on'
+;
+
+ID: /[a-zA-Z_][a-zA-Z_0-9]*/;
+INT: /[0-9]+/;

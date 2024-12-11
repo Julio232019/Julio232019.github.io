@@ -1,0 +1,11 @@
+begin
+    car Mustang model Coupe color Red max_speed 180 fuel 100 engine_status Off
+    drive Mustang forward for 50 km
+    accelerate Mustang by 200
+    turn Mustang on
+    check_status Mustang fuel
+    accelerate Mustang by 100
+    slow Mustang by 100
+    stop Mustang
+end
+

@@ -1,0 +1,10 @@
+begin 
+    car Camaro model Coupe color grey max_speed 200 fuel 100 engine_status On
+    drive Camaro backward for 10 km
+    drive Camaro forward for 200 km
+    accelerate Camaro by 145
+    slow Camaro by 45
+    check_status Camaro fuel
+    stop Camaro
+    drive Camaro forward for 500 km
+end
