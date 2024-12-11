@@ -1,6 +1,6 @@
 begin
     car Lightning model Coupe color Red max_speed 215 fuel 100 engine_status On
-    drive Lightning forward for 50 km
+    drive Lightning forward for 50 miles
     accelerate Lightning by 100
     check_status Lightning fuel
     slow Lightning by 50

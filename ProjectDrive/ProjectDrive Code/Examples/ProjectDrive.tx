@@ -13,7 +13,7 @@ CarDefinition:
 ;
 
 MoveCommand:
-    'drive' car=ID direction=ID 'for' distance=INT 'km'
+    'drive' car=ID direction=ID 'for' distance=INT 'miles'
 ;
 
 AccelerateCommand:
